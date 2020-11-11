@@ -1,0 +1,782 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+
+body {
+    background-image: url(IMG/marble.jpg);
+    background-attachment: fixed;
+}
+
+header {
+    height: 5vh;
+}
+
+
+.profile-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #111;
+    height: 40vh;
+    width: 100%;
+    background-image: url(IMG/inside3\ 2.png);
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+
+.profile-banner h1, .profile-banner h3 {
+    color: white;
+    z-index: 10;
+}
+.profile-banner:after {
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+}
+.profile-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+.profile-title h1 {
+    font-size: 25px;
+    
+}
+
+.profile-title h3 {
+    font-size: 15px;
+    
+}
+#banner {
+    background-color: #0A1D29;
+}
+.sub-hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    min-height: 75vh;
+}
+
+.artist-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(10px, 1fr));
+    grid-template-rows: repeat(2, 120px);
+    grid-gap: 5px;
+    width: 80%;
+    z-index: 10;
+    margin: 20px 0px 0px 0px;
+    align-items: center;
+}
+.artist-btn {
+    border: 1px solid #111;
+    height: 80px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+
+.artist-btn div {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+.artist-btn div:hover {
+    background: none;
+}
+
+.artist-buttons a{
+    text-decoration: none;
+    color: #111;
+    font-size: 8px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.artist-buttons a:hover{
+    color: white;
+}
+.artist-btn:first-child {
+    background-image: url(IMG/leanne-profile.webp);
+    background-size: cover;
+    background-position: center;
+}
+.artist-btn:nth-child(2){
+    background-image: url(IMG/candice-profile.webp);
+    background-size: cover;
+    background-position: center;
+}
+.artist-btn:nth-child(3){
+    background-image: url(IMG/katy-profile.webp);
+    background-size: cover;
+    background-position: center;
+}
+.artist-btn:nth-child(4){
+    background-image: url(IMG/jodie-profile.webp);
+    background-size: cover;
+    background-position: center;
+}
+.artist-btn:nth-child(5){
+    background-image: url(IMG/sally-profile-tattoo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.artist-btn:nth-child(6){
+    background-image: url(IMG/stephanie-profile.webp);
+    background-size: cover;
+    background-position: center;
+}
+.artist-btn:nth-child(7){
+    background-image: url(IMG/zipporah\ profile.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.pictures {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.profile-pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0px 20px 0px;
+    height: 23%;
+}
+.profile-pic h2 {
+    font-size: 45px;
+    font-weight: bold;
+}
+.profile-pic img {
+    margin-bottom: 10%;
+    height: 20vh;
+    
+}
+.mini-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    grid-template-rows: repeat(2, 110px);
+    margin: 20px 10px 20px 0px;
+    grid-gap: 10px;
+}
+
+.mini-gallery .profile-img {
+    width: 110px;
+    height: 110px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Leanne pics */
+
+#leanne-gallery .profile-img1 {
+    background-image: url(IMG/leanne-thumb/img1.png);
+}
+#leanne-gallery .profile-img2 {
+    background-image: url(IMG/leanne-thumb/img2.png);
+}
+#leanne-gallery .profile-img3 {
+    background-image: url(IMG/leanne-thumb/img4.png);
+}
+#leanne-gallery .profile-img4 {
+    background-image: url(IMG/leanne-thumb/img3.png);
+}
+#leanne-gallery .profile-img5 {
+    background-image: url(IMG/leanne-thumb/img5.png);
+}
+#leanne-gallery .profile-img6 {
+    background-image: url(IMG/leanne-thumb/img6.png);
+}
+#leanne-gallery .profile-img7 {
+    background-image: url(IMG/leanne-thumb/img7.png);
+}
+#leanne-gallery .profile-img8 {
+    background-image: url(IMG/leanne-thumb/img8.png);
+}
+#leanne-gallery .profile-img9 {
+    background-image: url(IMG/leanne-thumb/img9.png);
+}
+
+/* Jodie pics */
+
+#jodie-gallery .profile-img1 {
+    background-image: url(IMG/jodie-img/jodie-img1.png);
+}
+#jodie-gallery .profile-img2 {
+    background-image: url(IMG/jodie-img/jodie-img2.png);
+}
+#jodie-gallery .profile-img3 {
+    background-image: url(IMG/jodie-img/jodie-img3.png);
+}
+#jodie-gallery .profile-img4 {
+    background-image: url(IMG/jodie-img/jodie-img4.png);
+}
+#jodie-gallery .profile-img5 {
+    background-image: url(IMG/jodie-img/jodie-img5.png);
+}
+#jodie-gallery .profile-img6 {
+    background-image: url(IMG/jodie-img/jodie-img6.png);
+}
+#jodie-gallery .profile-img7 {
+    background-image: url(IMG/jodie-img/jodie-img7.png);
+}
+#jodie-gallery .profile-img8 {
+    background-image: url(IMG/jodie-img/jodie-img8.png);
+}
+#jodie-gallery .profile-img9 {
+    background-image: url(IMG/jodie-img/jodie-img9.png);
+}
+
+/* Sally pics */
+
+#sally-gallery .profile-img1 {
+    background-image: url(IMG/sally-thumb/img1.png);
+}
+#sally-gallery .profile-img2 {
+    background-image: url(IMG/sally-thumb/img2.png);
+}
+#sally-gallery .profile-img3 {
+    background-image: url(IMG/sally-thumb/img3.png);
+}
+#sally-gallery .profile-img4 {
+    background-image: url(IMG/sally-thumb/img4.png);
+}
+#sally-gallery .profile-img5 {
+    background-image: url(IMG/sally-thumb/img5.png);
+}
+#sally-gallery .profile-img6 {
+    background-image: url(IMG/sally-thumb/img6.png);
+}
+#sally-gallery .profile-img7 {
+    background-image: url(IMG/sally-thumb/img7.png);
+}
+#sally-gallery .profile-img8 {
+    background-image: url(IMG/sally-thumb/img8.png);
+}
+#sally-gallery .profile-img9 {
+    background-image: url(IMG/sally-thumb/img9.png);
+}
+
+/* Steph pics */
+
+#steph-gallery .profile-img1 {
+    background-image: url(IMG/steph-thumb/img1.png);
+}
+#steph-gallery .profile-img2 {
+    background-image: url(IMG/steph-thumb/img2.png);
+}
+#steph-gallery .profile-img3 {
+    background-image: url(IMG/steph-thumb/img3.png);
+}
+#steph-gallery .profile-img4 {
+    background-image: url(IMG/steph-thumb/img4.png);
+}
+#steph-gallery .profile-img5 {
+    background-image: url(IMG/steph-thumb/img5.png);
+}
+#steph-gallery .profile-img6 {
+    background-image: url(IMG/steph-thumb/img6.png);
+}
+#steph-gallery .profile-img7 {
+    background-image: url(IMG/steph-thumb/img7.png);
+}
+#steph-gallery .profile-img8 {
+    background-image: url(IMG/steph-thumb/img8.png);
+}
+#steph-gallery .profile-img9 {
+    background-image: url(IMG/steph-thumb/img9.png);
+}
+
+/* Katy pics */
+
+#katy-gallery .profile-img1 {
+    background-image: url(IMG/katy-img/katy-img1.png);
+}
+#katy-gallery .profile-img2 {
+    background-image: url(IMG/katy-img/Katy-img2.png);
+}
+#katy-gallery .profile-img3 {
+    background-image: url(IMG/katy-img/katy-img3.png);
+}
+#katy-gallery .profile-img4 {
+    background-image: url(IMG/katy-img/katy-img4.png);
+}
+#katy-gallery .profile-img5 {
+    background-image: url(IMG/katy-img/katy-img5.png);
+}
+#katy-gallery .profile-img6 {
+    background-image: url(IMG/katy-img/katy-img6.png);
+}
+#katy-gallery .profile-img7 {
+    background-image: url(IMG/katy-img/katy-img7.png);
+}
+#katy-gallery .profile-img8 {
+    background-image: url(IMG/katy-img/katy-img8.png);
+}
+#katy-gallery .profile-img9 {
+    background-image: url(IMG/katy-img/katy-img9.png);
+}
+
+/* Candice pics */
+
+#candice-gallery .profile-img1 {
+    background-image: url(IMG/candice-img/candice-img1.png);
+}
+#candice-gallery .profile-img2 {
+    background-image: url(IMG/candice-img/candice-img2.png);
+}
+#candice-gallery .profile-img3 {
+    background-image: url(IMG/candice-img/candice-img3.png);
+}
+#candice-gallery .profile-img4 {
+    background-image: url(IMG/candice-img/candice-img4.png);
+}
+#candice-gallery .profile-img5 {
+    background-image: url(IMG/candice-img/candice-img5.png);
+}
+#candice-gallery .profile-img6 {
+    background-image: url(IMG/candice-img/candice-img6.png);
+}
+#candice-gallery .profile-img7 {
+    background-image: url(IMG/candice-img/candice-img7.png);
+}
+#candice-gallery .profile-img8 {
+    background-image: url(IMG/candice-img/candice-img8.png);
+}
+#candice-gallery .profile-img9 {
+    background-image: url(IMG/candice-img/candice-img9.png);
+}
+
+#zipporah-gallery .profile-img1 {
+    background-image: url(IMG/zipporah-img/img1);
+}
+#zipporah-gallery .profile-img2 {
+    background-image: url(IMG/zipporah-img/img2);
+}
+#zipporah-gallery .profile-img3 {
+    background-image: url(IMG/zipporah-img/img3);
+}
+#zipporah-gallery .profile-img4 {
+    background-image: url(IMG/zipporah-img/img4);
+}
+#zipporah-gallery .profile-img5 {
+    background-image: url(IMG/zipporah-img/img5);
+}
+#zipporah-gallery .profile-img6 {
+    background-image: url(IMG/zipporah-img/img6);
+}
+#zipporah-gallery .profile-img7 {
+    background-image: url(IMG/zipporah-img/img7);
+}
+#zipporah-gallery .profile-img8 {
+    background-image: url(IMG/zipporah-img/img8);
+}
+#zipporah-gallery .profile-img9 {
+    background-image: url(IMG/zipporah-img/img9);
+}
+
+
+
+.mini-gallery .profile-img1{
+    grid-column: 2/3;
+}
+
+.mini-gallery .profile-img2{
+    grid-column: 3/4;
+}
+
+.mini-gallery .profile-img3{
+    grid-column: 2/3;
+}
+
+.bio {
+    width: 80%;
+    margin-top: 5%;
+    padding-bottom: 30px;  
+}
+
+.bio a {
+    color: #EAA30B;
+    text-decoration: none;
+}
+.cta-btn {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 65%;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+
+.sub-hero #primary-btn, 
+.sub-hero #secondary-btn  {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+    padding: 0.5em 1.5em;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .sub-hero #secondary-btn {
+      background: none;
+      border: 2px solid #111;
+      color: #111;
+      padding: 0.5em 1.5em;
+  }
+
+  .fab {
+      color: #111;
+        margin-right: 5px;
+        margin-top: 5px;
+  }
+
+  .sub-hero #primary-btn:hover  {
+    color: white;
+  }
+  .sub-hero #secondary-btn:hover  {
+    opacity: 0.5;
+  }
+
+footer {
+    z-index: 100;
+}
+
+@media only screen and (min-width: 400px) {
+
+    .profile-title h1 {
+        font-size: 36px
+    }
+    .profile-title h3 {
+        font-size: 20px
+    }
+    .artist-buttons {
+        margin-bottom: 20px;
+    }
+    .artist-btn {
+        height: 90px;
+        width: 60px;
+    }
+    .artist-btn a {
+        font-size: 10px;
+    }
+    .profile-pic img {
+        height: 27vh ;
+    }
+}
+
+
+@media only screen and (min-width: 650px) {
+    .profile-banner {
+        height: 55vh;
+    }
+    
+    .profile-banner h1 {
+        font-size: 50px;
+        
+    }
+
+    .profile-banner h3 {
+        font-size: 25px;
+    }
+
+    .artist-buttons {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        align-items: center;
+        margin: 50px 0px;
+    }
+
+    .wrapper {
+        min-height: 70vh;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .sub-hero {
+        min-height: 65vh;
+        justify-content: center;
+    }
+
+    .profile-pic {
+        flex-direction: column-reverse;
+        margin-top: 0;
+
+    }
+
+    .profile-pic img{
+        margin-bottom: 0px;
+        padding-top: 20px;
+        height: 23vh;
+    }
+  
+    .pictures {
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+
+    .mini-gallery {
+        margin-top: 0;
+        margin-left: 10px;
+        align-self: flex-end;
+    }
+
+    .bio {
+        font-size: 1em;
+    }
+  
+    .cta-btn {
+        flex-direction: row;
+        align-items: center;
+    }
+    .sub-hero #primary-btn {
+        margin-bottom: 0px;
+    }
+    .sub-hero #primary-btn, 
+.sub-hero #secondary-btn  {
+    font-size: 20px;
+  }
+
+}
+@media only screen and (min-width: 900px) {
+    
+    section {
+        padding-bottom: 100px;
+    }
+    .artist-btn {
+        height: 100px;
+        width: 70px;
+    }
+    .artist-btn a {
+        font-size: 12px;
+    }
+    .profile-pic h2 {
+        font-size: 40px;
+    }
+
+    .artist-buttons {
+        width: 80%;
+        margin: 50px 0px 0px 0px;
+    }
+    #leanne-wrapper {
+        min-height: 81vh;
+    }
+    #katy-wrapper {
+        height: 78vh;
+    }
+    #sally-wrapper {
+        min-height: 83vh;
+    }
+    
+
+    .wrapper {
+        width: 85%;
+    }
+
+    .sub-hero {
+        position: absolute;
+        width: 85%;
+        top: 55%;
+    }
+
+    .pictures {
+        margin-top: 40px;
+    }
+
+    .profile-pic img{
+        height: 25vh;
+     }
+
+    .mini-gallery {
+        grid-template-columns: repeat(3, minmax(10px, 1fr));
+        grid-template-rows: repeat(3, 120px);
+        grid-gap: 0px 10px;
+        margin-top: 20px;
+    }
+
+    .mini-gallery img {
+        height: 120px;
+        width: 120px;
+        cursor: pointer;
+    }
+
+    .hide-mobile {
+        display: inherit;
+    }
+
+    .profile-img1 {
+        grid-column: 1/2;
+    }
+
+    .profile-img2{
+        grid-column: 2/3;
+    }
+
+    .profile-img3{
+        grid-column: 3/4;
+    }
+
+    .profile-img4{
+        grid-row: 2/3;
+    }
+
+    .profile-img9 {
+        grid-row: 1/2;
+    }
+
+    .bio {
+        font-size: 1.2em;
+        padding-bottom: 50px;
+    }
+    .cta-btn {
+        width: 60%;
+    }
+    .sub-hero #primary-btn, 
+.sub-hero #secondary-btn  {
+    margin-bottom: 0px;
+  }
+    
+
+  
+}
+@media only screen and (min-width: 1100px) {
+
+    #leanne-wrapper {
+        min-height: 86vh;
+    }
+    #katy-wrapper {
+        height: 85vh;
+    }
+    #sally-wrapper {
+        min-height: 90vh;
+    }
+    .wrapper {
+        min-height: 82vh;
+    }
+    
+    .profile-banner {
+        margin: 0px 0px;
+    }
+
+    .profile-banner h1 {
+        font-size: 70px;
+    }
+
+    .profile-banner h3 {
+        font-size: 40px;
+    }
+
+    .artist-buttons {
+        width: 80%;
+    }
+
+    .artist-btn {
+        width: 80px;
+        height: 120px;
+    }
+
+    .artist-btn a{
+        font-size: 13px;
+    }
+ 
+    .profile-pic img{
+       height: 30vh;
+    }
+
+    .profile-pic h2 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+    .mini-gallery {
+        grid-template-columns: repeat(3, minmax(10px, 1fr));
+        grid-template-rows: repeat(3, 150px);
+        grid-gap: 10px;
+    }
+
+    .mini-gallery .profile-img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .bio {
+        font-size: 1.2em;
+    }
+    .cta-btn {
+        width: 50%;
+    }
+
+}
+@media only screen and (min-width: 1500px) {
+
+    #leanne-wrapper {
+        min-height: 94vh;
+    }
+    #sally-wrapper {
+        min-height: 100vh;
+    }
+    #katy-wrapper {
+        min-height: 92vh;
+    }
+
+    .wrapper {
+        min-height: 90vh;
+    }
+    .artist-buttons {
+        width: 70%
+    }
+
+    .profile-pic {
+        margin-right: 20px;
+    }
+  
+    .profile-pic img{
+        height: 40vh;
+     }
+
+     .mini-gallery {
+         grid-template-columns: repeat(3, minmax(10px, 1fr));
+         grid-template-rows: repeat(3, 180px);
+     }
+
+     .mini-gallery .profile-img {
+        height: 180px;
+        width: 180px;
+    }
+    
+     .profile-img {
+         height: 180px;
+         width: 180px;
+     }
+     
+}

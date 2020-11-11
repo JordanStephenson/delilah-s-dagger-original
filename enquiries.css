@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+
+#enquiries {
+    background: #111;
+}
+
+.info-page{
+    background: white
+}
+
+/* Profile Slides */
+
+.booking-slider {
+    position: relative;
+    overflow: hidden;
+    height: 40vh;
+    width: 100vw;
+}
+.booking-slider:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+.booking-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-title {
+    color: white;
+    z-index: 20;
+    text-align: center;
+    opacity: 0;
+}
+.logo-title h1{
+    font-size: 36px;
+}
+
+
+.booking-slide.current {
+    opacity: 1;
+}
+.booking-slide:first-child {
+    background: url(IMG/jodie-studio2) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.booking-slide:nth-child(2) {
+    background: url(IMG/inside) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.booking-slide.current .logo-title {
+    opacity: 1;
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+/* Main Section Styling*/
+
+.enquiries-page {
+    padding-top: 7vh;
+}
+
+.enquiries-page .title{
+   height: 10vh;
+   background-color: #FFD9D4;
+   display: none;
+   justify-content: center;
+   align-items: center;
+}
+
+.enquiries-page .title h1 {
+     color: #111;
+   font-size: 30px;
+   font-weight: bold;
+}
+
+.enquiries-info {
+    width: 80%;
+    text-align: center;
+    font-size: 12px;
+    margin: 0px auto 10px auto;
+    padding-top: 50px;
+}
+#enquiries-form .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 60vw;
+    padding: 2rem 4rem;
+    text-align: left;
+}
+#enquiries-form .input-group {
+    width: 60vw;
+}
+
+#enquiries-form .input-group label{
+    font-size: 10px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+#enquiries-form .input-group input {
+    padding: .5em;
+    margin-bottom: 25px;
+    background: none;
+    border: 1px solid #111;
+    outline: none;
+    width: 100%;
+    color: #111;
+    transition: all 0.5s ease;
+}
+#enquiries-form .input-group:last-child input{
+    padding: 3em 4em;
+}
+
+#enquiries-form .input-group input:focus {
+    border-color: #EAA30B;
+  }
+
+
+@media only screen and (min-width: 600px) {
+
+    .enquiries-info {
+        font-size: 18px;
+
+    }
+
+
+}
+
+@media only screen and (min-width: 900px) {
+    .enquiries-page {
+        display: grid;
+        grid-template-columns: 35% auto;
+        width: 100vw;
+    }
+    .logo-title {
+        display: none;
+    }
+
+    .enquiries-page .title {
+        height: 20vh;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+    }
+    .enquiries-page .title h1{
+        font-size: 46px;
+    }
+    .info-page {
+        padding-top: 50px;
+        grid-row: 1/4;
+        grid-column: 2/3;
+    }
+    .enquiries-info {
+        font-size: 15px;
+    }
+    .booking-slider {
+        height: 85vh;
+        width: 100%;
+        grid-row: 2/4;
+    }
+    .booking-slider:after {
+        opacity: 0.4;
+    }
+ 
+    #enquiries-form .input-group {
+        width: 100%;
+        margin: auto;
+    }
+    #enquiries-form .input-group:nth-child(3) {
+        width: 40%;
+        display: inline-block;
+        
+    }
+    #enquiries-form .input-group:nth-child(4) {
+        width: 40%;
+        display: inline-block;
+        margin-left: 19%;
+    }
+    #enquiries-form .input-group:nth-child(5) {
+        width: 40%;
+        display: inline-block;
+    }
+    #enquiries-form .input-group:nth-child(6) {
+        width: 40%;
+        display: inline-block;
+        margin-left: 19%;
+    }
+    #enquiries-form .input-group label {
+       font-size: 15px;
+    }
+    #enquiries-form .input-group input {
+        padding: 1em;
+     }
+
+}
+@media only screen and (min-width: 1100px) {
+      
+    .enquiries-info {
+        font-size: 18px;
+    }
+    .booking-slider {
+        height: 92vh;
+    }
+}
+@media only screen and (min-width: 1400px) {
+      
+    .booking-slider {
+        height: 82vh;
+    }
+}
