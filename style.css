@@ -305,9 +305,7 @@ nav {
     line-height: 150%;
 }
 .artists {
-    background-image: url(IMG/marble.jpg);
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: #fff;
     padding: 100px 0px 150px 0px;
 }
 .artists .container{
@@ -1050,7 +1048,9 @@ footer h3 {
         border-radius: 5px;
     }
     .artists {
-        background-color: #0A1D29;
+        background-image: url(IMG/marble.jpg);
+        background-attachment: fixed;
+        background-size: cover;
         height: 140vh;
         position: relative;
         justify-content: center;
