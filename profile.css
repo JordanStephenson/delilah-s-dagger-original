@@ -116,22 +116,22 @@ header {
     color: white;
 }
 .artist-btn:first-child {
-    background-image: url(IMG/leanne-profile.webp);
+    background-image: url(IMG/leanne-profile\ 1.png);
     background-size: cover;
     background-position: center;
 }
 .artist-btn:nth-child(2){
-    background-image: url(IMG/candice-profile.webp);
+    background-image: url(IMG/candice-profile\ 1.png);
     background-size: cover;
     background-position: center;
 }
 .artist-btn:nth-child(3){
-    background-image: url(IMG/katy-profile.webp);
+    background-image: url(IMG/katy-profile\ 1.png);
     background-size: cover;
     background-position: center;
 }
 .artist-btn:nth-child(4){
-    background-image: url(IMG/jodie-profile.webp);
+    background-image: url(IMG/jodie-profile\ 1.png);
     background-size: cover;
     background-position: center;
 }
@@ -141,12 +141,12 @@ header {
     background-position: center;
 }
 .artist-btn:nth-child(6){
-    background-image: url(IMG/stephanie-profile.webp);
+    background-image: url(IMG/stephanie-profile\ 1.png);
     background-size: cover;
     background-position: center;
 }
 .artist-btn:nth-child(7){
-    background-image: url(IMG/zipporah\ profile.webp);
+    background-image: url(IMG/zipporah\ profile\ 1.png);
     background-size: cover;
     background-position: center;
 }

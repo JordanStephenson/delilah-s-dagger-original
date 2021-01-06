@@ -78,14 +78,14 @@
 
 .enquiries-page .title{
    height: 10vh;
-   background-color: #FFD9D4;
+   background-color: #0A1D29;
    display: none;
    justify-content: center;
    align-items: center;
 }
 
 .enquiries-page .title h1 {
-     color: #111;
+     color: #fff;
    font-size: 30px;
    font-weight: bold;
 }
