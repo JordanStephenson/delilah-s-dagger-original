@@ -248,17 +248,17 @@ nav {
     color: #333;
 }
 .slide:first-child {
-    background: url(IMG//katy-studio) no-repeat;
+    background: url(IMG//pexels-gabriel-lara-3657575.jpg) no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center;
 }
 .slide:nth-child(2) {
-    background: url(IMG/img18.png) no-repeat;
+    background: url(IMG/pexels-adrian-boustead-955938.jpg) no-repeat;
     background-size: cover;
     background-position: top;
 }
 .slide:nth-child(3) {
-    background: url(IMG//studio2) no-repeat;
+    background: url(IMG/pexels-cottonbro-4125609.jpg) no-repeat;
     background-size: cover;
     background-position: top;
 }
